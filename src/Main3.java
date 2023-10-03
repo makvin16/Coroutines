@@ -1,3 +1,6 @@
+import coroutines.Builders_commonKt;
+import coroutines.GlobalScope;
+
 public class Main3 {
 
     public static void main(String[] args) {

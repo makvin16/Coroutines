@@ -2,6 +2,18 @@ package coroutines
 
 fun CoroutineScope.launch(
     context: CoroutineContext = EmptyCoroutineContext,
-    block: suspend CoroutineScope.() -> Unit
+    start: CoroutineStart = CoroutineStart.DEFAULT,
+    block: suspend (CoroutineScope) -> Unit
 ): Job {
+    val newContext = newCoroutineContext(context)
+    val coroutine = StandaloneCoroutine(newContext, active = true)
+    return coroutine
+}
+
+// --------------- implementation ---------------
+
+private class StandaloneCoroutine(
+    parentContext: CoroutineContext,
+    active: Boolean
+) : AbstractCoroutine<Unit>(parentContext, initParentJob = true, active = active) {
 }

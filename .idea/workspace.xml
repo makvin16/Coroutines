@@ -4,30 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6200b9b-1dfa-461d-843d-144d8b148500" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multithreading.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/Builders.common.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/ContinuationInterceptor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContext.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContextImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CoroutineScope.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/Job.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/broker/MessageBroker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/consumer/MessageConsumingTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/model/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/producer/MessageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/transport/producer/MessageProducingTask.java" afterDir="false" />
+    <list default="true" id="e6200b9b-1dfa-461d-843d-144d8b148500" name="Changes" comment="last commit">
+      <change afterPath="$PROJECT_DIR$/src/coroutines/AbstractCoroutine.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/Builders.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/CompletableJob.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/Continuation.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/CoroutineStart.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/JobSupport.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coroutines/Scopes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainKt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainKt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/Builders.common.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/Builders.common.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineContext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContext.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineContextImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContextImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineScope.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/Job.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/Job.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +29,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -115,6 +107,19 @@
       <option name="presentableId" value="Default" />
       <updated>1695627912084</updated>
     </task>
+    <task id="LOCAL-00001" summary="last commit">
+      <option name="closed" value="true" />
+      <created>1696257543386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696257543386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
   </component>
 </project>
