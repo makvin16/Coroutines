@@ -3,10 +3,11 @@ package coroutines
 fun CoroutineScope.launch(
     context: CoroutineContext = EmptyCoroutineContext,
     start: CoroutineStart = CoroutineStart.DEFAULT,
-    block: suspend (CoroutineScope) -> Unit
+    block: suspend CoroutineScope.() -> Unit
 ): Job {
     val newContext = newCoroutineContext(context)
     val coroutine = StandaloneCoroutine(newContext, active = true)
+    coroutine.start(start, coroutine, block)
     return coroutine
 }
 

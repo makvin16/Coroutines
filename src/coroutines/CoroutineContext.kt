@@ -11,9 +11,16 @@ fun CoroutineScope.newCoroutineContext(context: CoroutineContext): CoroutineCont
  */
 interface CoroutineContext {
 
-
+    /**
+     * Возвращает элемент с заданным ключом из этого контекста или значение null.
+     */
     operator fun <E : Element> get(key: Key<E>): E?
 
+    /**
+     * Накапливает записи этого контекста,
+     * начиная с начального значения и применяя операцию слева направо к текущему значению накопителя
+     * и каждому элементу этого контекста.
+     */
     fun <R> fold(initial: R, operation: (R, Element) -> R): R
 
     operator fun plus(context: CoroutineContext): CoroutineContext {
@@ -31,6 +38,9 @@ interface CoroutineContext {
             }
     }
 
+    /**
+     * Возвращает контекст, содержащий элементы из этого контекста, но без элемента с указанным ключом.
+     */
     fun minusKey(key: Key<*>): CoroutineContext
 
     /**
@@ -45,16 +55,17 @@ interface CoroutineContext {
         val key: Key<*>
 
         override fun <E : Element> get(key: Key<E>): E? {
+            println("Element method [get] $key")
             @Suppress("UNCHECKED_CAST")
             return if (this.key == key) this as E else null
         }
 
         override fun <R> fold(initial: R, operation: (R, Element) -> R): R {
-            TODO("Not yet implemented")
+            return operation(initial, this)
         }
 
         override fun minusKey(key: Key<*>): CoroutineContext {
-            TODO("Not yet implemented")
+            return if (this.key == key) EmptyCoroutineContext else this
         }
     }
 }

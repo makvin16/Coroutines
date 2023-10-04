@@ -1,5 +1,7 @@
 package coroutines
 
+import kotlin.coroutines.Continuation
+
 enum class CoroutineStart {
     DEFAULT,
     LAZY,
@@ -8,5 +10,5 @@ enum class CoroutineStart {
 
     val isLazy: Boolean get() = this === LAZY
 
-    operator fun <T> invoke(completion: Continuation<T>) {}
+    operator fun <T> invoke(block: suspend () -> T, completion: Continuation<T>) {}
 }

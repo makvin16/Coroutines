@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6200b9b-1dfa-461d-843d-144d8b148500" name="Changes" comment="last commit">
-      <change afterPath="$PROJECT_DIR$/src/coroutines/AbstractCoroutine.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/Builders.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CompletableJob.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/Continuation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/CoroutineStart.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/JobSupport.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/coroutines/Scopes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainKt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainKt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/AbstractCoroutine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/AbstractCoroutine.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coroutines/Builders.common.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/Builders.common.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/CompletableJob.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CompletableJob.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/Continuation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/Continuation.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineContext.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContext.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineContextImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineContextImpl.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineScope.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/CoroutineStart.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/CoroutineStart.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coroutines/Job.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/Job.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coroutines/JobSupport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/coroutines/JobSupport.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +27,9 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -115,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696257543386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last commit">
+      <option name="closed" value="true" />
+      <created>1696344499793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696344499793</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

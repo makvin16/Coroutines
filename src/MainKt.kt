@@ -1,15 +1,18 @@
-import coroutines.CoroutineScope
-import coroutines.GlobalScope
-import coroutines.Job
-import coroutines.launch
+import coroutines.*
 
-val scope = CoroutineScope(Job())
+internal val job1: CompletableJob = JobImpl(null)
+internal val job2: CompletableJob = JobImpl(null)
+val scope = CoroutineScope(job1)
 
 fun main() {
-    val job = GlobalScope.launch {
-        println("test")
-    }
-    Thread.sleep(2000)
+    scope.launch {  }
+    println(job1)
+    println(job2)
+    println(scope.coroutineContext)
+//    val job = GlobalScope.launch {
+//        println("test")
+//    }
+//    Thread.sleep(2000)
 //    GlobalScope.launch {
 //        println("test")
 //    }
