@@ -44,14 +44,13 @@ abstract class AbstractCoroutine<in T>(
         TODO("Not yet implemented")
     }
 
-    override val coroutineContext: CoroutineContext
-        get() = context
+    override val coroutineContext: CoroutineContext get() = context
 
     /**
      * Запускает эту корутину с заданным блоком кода и стратегией запуска.
      * Эта функция должна вызываться не более одного раза в этой корутине.
      */
-    fun <R> start(start: CoroutineStart, receiver: R, block: suspend R.() -> T) {
+    fun <R> start(start: CoroutineStart, receiver: R, block: R.() -> T) {
         start(block, receiver, this)
     }
 }

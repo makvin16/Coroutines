@@ -1,14 +1,11 @@
 import coroutines.*
 
-internal val job1: CompletableJob = JobImpl(null)
-internal val job2: CompletableJob = JobImpl(null)
-val scope = CoroutineScope(job1)
+//internal val job1: CompletableJob = JobImpl(null)
+//internal val job2: CompletableJob = JobImpl(null)
+//val scope = CoroutineScope(job1)
 
 fun main() {
-    scope.launch {  }
-    println(job1)
-    println(job2)
-    println(scope.coroutineContext)
+    GlobalScope.launch {  }
 //    val job = GlobalScope.launch {
 //        println("test")
 //    }
